@@ -82,7 +82,7 @@ nav label:before {
   position: absolute;
   width: 100%;
   font-family: fontAwesome;
-  font-size: 2em;
+  font-size: 2vp;
   text-align: center;
   text-shadow: 2px 2px 0 #666;
   transition: all 0.5s ease;
@@ -128,7 +128,7 @@ input:checked ~ nav > label + .navigation {
   align-self: center;
   padding: 0.5em 0;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2vp;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -161,7 +161,7 @@ section {
   opacity: 0;
   overflow: hidden;
   transition: width 0.5s, opacity 0.5s;  
-   box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 1px 5px black;
   backdrop-filter: blur(10px);
 } 
  
@@ -182,11 +182,6 @@ section {
   background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   color: #000000;
   opacity: 1;
-    img {
-    box-shadow: 0px 5px 20px black;
-}
-
-  
 }
 
 .sec-home a {
@@ -245,7 +240,7 @@ section {
 
 /*Contact*/
 .sec-contact {
-  background: linear-gradient(to bottom, #66ffff 0%, #99ffcc 100%);
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   color: #000000;
   
 }
@@ -307,3 +302,4 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
