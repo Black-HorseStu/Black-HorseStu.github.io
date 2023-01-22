@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+
+/*Typography*/
+html {
+  font: 16px "Indie Flower";
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.375em;
+}
+
+/*Base*/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*Layout*/
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 60%;
+}
+
+/*Navigation*/
+nav {
+  float: right;
+  width: 5%;
+  /*9.375em;/*150px*/
+  min-height: 100%;
+  background: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  /*
+  border-radius: 9px;
+  */
+}
+
+nav label {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0.25em 0;
+  height: 2.5em;
+  cursor: pointer;
+}
+nav label:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  font-family: fontAwesome;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 0 #666;
+  transition: all 0.5s ease;
+}
+nav label:hover:before {
+  text-shadow: none;
+}
+
+:target {
+  z-index: 2;
+  opacity: 1;
+}
+
+/*Hidding mechanism*/
+input {
+  display: none;
+}
+
+input:checked ~ section {
+  width: 85%;
+}
+
+input:checked ~ nav {
+  width: 15%;
+}
+
+input:checked ~ nav > label:before {
+  content: "";
+}
+
+input:checked ~ nav > label + .navigation {
+  display: flex;
+}
+
+/*close - "\f00d"*/
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+.navigation a {
+  display: block;
+  align-self: center;
+  padding: 0.5em 0;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #666;
+}
+
+nav label,
+.navigation a {
+  border-bottom: 1px dashed #ffcc00;
+  transition: all 0.5s ease;
+}
+nav label:hover,
+.navigation a:hover {
+  background: #ffcc00;
+  text-shadow: none;
+}
+nav label:active,
+.navigation a:active {
+  background: #ffcc00;
+}
+
+/*Sections*/
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 95%;
+  min-height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.5s, opacity 0.5s;
+  
+}
+ 
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+}
+
+/*Home*/
+.sec-home {
+  float: left;
+  position: relative;
+  
+  background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  
+  background-repeat: no-repeat;
+  color: #000000;
+  opacity: 1;
+  
+}
+
+.sec-home a {
+  color: #666699;
+  -webkit-text-decoration-style: dashed;
+          text-decoration-style: dashed;
+}
+.sec-home a:hover {
+  color: #ffcc00;
+}
+.sec-home a:active {
+  color: #666699;
+}
+
+.sec-home .content {
+  height: 50%;
+  text-align: center;
+}
+
+/*About*/
+.sec-about {
+  background: linear-gradient(to bottom, #ff6600 0%, #660033 100%);
+  color: #000000;
+}
+
+.sec-about .content {
+  height: 55%;
+  text-align: center;
+}
+
+/*Portfolio*/
+.sec-portfolio {
+
+  background: linear-gradient(to bottom, #33cc33 0%, #006699 100%);
+  color: #000000;
+  overflow: hidden;
+}
+
+.sec-portfolio .col-big {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 20vw;
+}
+
+.sec-portfolio img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  transition: all 0.5s ease;
+}
+.sec-portfolio img:hover {
+  opacity: 1;
+}
+
+/*Contact*/
+.sec-contact {
+  background: linear-gradient(to bottom, #66ffff 0%, #99ffcc 100%);
+  color: #000000;
+  
+}
+
+.soc-media {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.soc-media li {
+  float: left;
+}
+
+.soc-media li:not(:first-child) a {
+  margin-left: 0.75em;
+}
+
+.soc-media a {
+  display: block;
+  color: #aaa;
+  font-size: 3em;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.soc-media a:hover {
+  color: #333;
+}
+.soc-media a:active {
+  color: #666;
+}
