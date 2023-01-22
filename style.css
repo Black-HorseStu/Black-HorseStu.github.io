@@ -82,7 +82,7 @@ nav label:before {
   position: absolute;
   width: 100%;
   font-family: fontAwesome;
-  font-size: 2vp;
+  font-size: 2em;
   text-align: center;
   text-shadow: 2px 2px 0 #666;
   transition: all 0.5s ease;
@@ -128,7 +128,7 @@ input:checked ~ nav > label + .navigation {
   align-self: center;
   padding: 0.5em 0;
   color: #fff;
-  font-size: 2vp;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
