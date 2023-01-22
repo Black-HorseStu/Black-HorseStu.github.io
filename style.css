@@ -139,17 +139,17 @@ input:checked ~ nav > label + .navigation {
 
 nav label,
 .navigation a {
-  border-bottom: 1px dashed #ffcc00;
+  border-bottom: 1px dashed #666699;
   transition: all 0.5s ease;
 }
 nav label:hover,
 .navigation a:hover {
-  background: #ffcc00;
+  background: #666699;
   text-shadow: none;
 }
 nav label:active,
 .navigation a:active {
-  background: #ffcc00;
+  background: #666699;
 }
 
 /*Sections*/
@@ -183,7 +183,7 @@ section {
   
   background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   
-  background-repeat: no-repeat;
+
   color: #000000;
   opacity: 1;
   
