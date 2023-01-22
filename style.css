@@ -66,6 +66,7 @@ nav {
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
+ 
 }
 
 nav label {
@@ -160,9 +161,9 @@ section {
   opacity: 0;
   overflow: hidden;
   transition: width 0.5s, opacity 0.5s;  
-  box-shadow: 0px 1px 5px black;
+   box-shadow: 0px 1px 5px black;
   backdrop-filter: blur(10px);
-}
+} 
  
 .content {
   position: absolute;
@@ -181,6 +182,10 @@ section {
   background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   color: #000000;
   opacity: 1;
+    img {
+    box-shadow: 0px 5px 20px black;
+}
+
   
 }
 
