@@ -367,7 +367,11 @@ section {
     width:100%; 
   }
 }
-
+@media screen and (max-width: 800px) {
+.soc-media li:not(:first-child) a {
+  margin-left: 0px;
+}
+}
 @media screen and (max-width: 700px) {
   nav {
     width: 50px;
@@ -419,6 +423,7 @@ section {
   padding:0px;
   
 }
+
 }
 
 @media screen and (max-width: 500px)
