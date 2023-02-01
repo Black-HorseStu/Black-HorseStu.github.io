@@ -8,6 +8,7 @@ html {
 
 h1 {
   font-size: 2.5em;
+    
 }
 
 h2 {
@@ -53,8 +54,9 @@ body {
 }
 
 .content {
-  width: 60%;
+  width: 70%;
 }
+
 
 /*Navigation*/
 nav {
@@ -102,7 +104,7 @@ input {
 }
 
 input:checked ~ section {
-  width: 85%;
+  width: 100%;
 }
 
 input:checked ~ nav {
@@ -161,8 +163,9 @@ section {
   opacity: 0;
   overflow: hidden;
   transition: width 0.5s, opacity 0.5s;  
-  box-shadow: 0px 1px 5px black;
-  backdrop-filter: blur(10px);
+  height:100vw;
+  
+
 } 
  
 .content {
@@ -182,6 +185,8 @@ section {
   background: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
   color: #000000;
   opacity: 1;
+  box-shadow: 2px 1px 5px black;
+
 }
 
 .sec-home a {
@@ -197,52 +202,72 @@ section {
 }
 
 .sec-home .content {
-  height: 50%;
+  position:fixed;
+  height: 80%;
   text-align: center;
 }
+
+
 
 /*About*/
 .sec-about {
   background: linear-gradient(to bottom, #ff6600 0%, #660033 100%);
   color: #000000;
+  box-shadow: 0px 0px 0px;
+
 }
 
 .sec-about .content {
+  position:fixed;
   height: 55%;
   text-align: center;
 }
 
 /*Portfolio*/
 .sec-portfolio {
-
   background: linear-gradient(to bottom, #33cc33 0%, #006699 100%);
   color: #000000;
   overflow: hidden;
+  box-shadow: 0px 0px 0px;
 }
 
 .sec-portfolio .col-big {
   float: left;
   position: relative;
   width: 25%;
-  height: 20vw;
+  height: 23vw;
+}
+
+.sec-portfolio .li-style {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  border:0px solid;
+  list-style-type: none; 
 }
 
 .sec-portfolio img {
   display: block;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 1;
   transition: all 0.5s ease;
+  padding: 8px;
+  
 }
 .sec-portfolio img:hover {
+  width:100%;
+  height:100%;
   opacity: 1;
+  padding: 0px;
+  
 }
 
 /*Contact*/
 .sec-contact {
   background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   color: #000000;
-  
+  box-shadow: 0px 0px 0px;
 }
 
 .soc-media {
@@ -256,19 +281,19 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
+
 }
 
 .soc-media li {
   float: left;
 }
-
 .soc-media li:not(:first-child) a {
   margin-left: 0.75em;
 }
 
 .soc-media a {
   display: block;
-  color: #aaa;
+  color: black;
   font-size: 3em;
   text-decoration: none;
   transition: color 0.5s ease;
@@ -279,6 +304,164 @@ section {
 .soc-media a:active {
   color: #666;
 }
+
+/* for devices screens */
+
+/*contact*/
+
+@media screen and (max-width: 800px) {
+  ul.soc-media {
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+  }
+}
+
+/*devices*/
+  @media screen and (max-height: 100000px) {
+  nav {
+    width: 50px;
+    min-height: 5%;
+    position:fixed;
+    right:0px;
+    top: 97px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 1px black;
+    z-index:999;
+  }
+  input:checked ~ section {
+  width: 100%;
+  }
+  
+  input:checked ~ nav {
+  width: 120px;
+  }
+    
+     
+  nav label,
+.navigation a {
+  border-bottom: 0px dashed #666699;
+  transition: all 0.5s ease;
+
+}
+  section {
+    width:100%;
+    height:100vw;
+    overflow: hidden;
+  }
+  sec-home {
+    width:100%;
+  }
+  sec-about {
+    width:100%;
+  }
+  
+  sec-portfolio {
+    width:100%; 
+  }
+  sec-contact {
+    width:100%;
+    position:fixed;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    width: 50px;
+    min-height: 5%;
+    position:fixed;
+    right:0px;
+    top: 97px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 1px black;
+    z-index:999;
+  }
+  input:checked ~ section {
+  width: 100%;
+  }
+  
+  input:checked ~ nav {
+  width: 120px;
+  }
+  
+  nav label,
+.navigation a {
+  border-bottom: 0px dashed #666699;
+  transition: all 0.5s ease;
+
+}
+  section {
+    width:100%;
+    height:100vw;
+    overflow: hidden;
+  }
+  sec-home {
+    width:100%;
+  }
+  .sec-home .content {
+  width:100%;
+  height: 60%;
+  text-align: center;
+}
+  sec-about {
+    width:100%;
+  }
+  
+  sec-portfolio {
+    width:100%; 
+  }
+  .sec-portfolio .col-big {
+  display: inline-grid;
+  grid-template-columns: 139px auto;
+  padding:0px;
+  
+}
+  sec-contact {
+    width:100%;
+    position:fixed;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+    nav {
+    width: 50px;
+    min-height: 5%;
+    position:fixed;
+    right:0px;
+    top: 97px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 1px black;
+    z-index:999;
+  }
+  input:checked ~ section {
+  width: 100%;
+  }
+  
+  input:checked ~ nav {
+  width: 120px;
+  }
+  
+  section {
+    width:100%;
+    height:1500px; 
+  }
+
+  .sec-portfolio .col-big {
+  width:100%; 
+  height:110px;
+  left:45px;
+  display: inline-grid;
+  grid-template-columns: 139px auto;
+  padding:0px;
+  
+}
+  
+}
+
+
+  
 
 /*SCrollar*/
 
