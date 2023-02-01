@@ -268,6 +268,8 @@ section {
   background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   color: #000000;
   box-shadow: 0px 0px 0px;
+      position: fixed;
+
 }
 
 .soc-media {
