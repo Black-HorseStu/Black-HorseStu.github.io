@@ -785,10 +785,14 @@ nav label:active,
 }
   .sec-portfolio .img-port
 {
+  display:none;
   width:0%;
   border:0px solid;
   margin: auto;
 }
+  .sec-portfolio .li-style {
+    margin:auto;
+  }
 }
 
 
