@@ -142,6 +142,14 @@ str6.length > 0 ? el6.innerHTML += str6.shift() : clearTimeout(running);
 var running = setTimeout(animate, 100);
 })();
 
+var string7 = "Because Adham means the black horse in Arabic.";
+var str7 = string7.split("");
+var el7 = document.getElementById('str7');
+(function animate() {
+str7.length > 0 ? el7.innerHTML += str7.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 150);
+})();
+
 
 let first = document.getElementById('discord'),
     sec = document.getElementById('sec-contact'),
@@ -156,71 +164,71 @@ let first = document.getElementById('discord'),
     
 
 first.onmouseover = () => {
-  sec.style.background = '#452c63a4';
+  sec.style.background = '#2c1c41a4';
 }
 
 first.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 //////////////
 
 third.onmouseover = () => {
-  sec.style.background = 'rgba(54, 173, 228, 0.479)';
+  sec.style.background = 'rgba(19, 52, 68, 0.548)';
 }
 
 third.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 //////////////
 
 fourth.onmouseover = () => {
-  sec.style.background = '#87b4b680';
+  sec.style.background = '#242f30a2';
 }
 
 fourth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 //////////////
 
 fifth.onmouseover = () => {
-  sec.style.background = '#6d23237e';
+  sec.style.background = '#5c1d1d7e';
 }
 
 fifth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 /////////////
 
 sixth.onmouseover = () => {
-  sec.style.background = '#276e31a4';
+  sec.style.background = '#153a1aa4';
 }
 
 sixth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 ////////////
 
 seventh.onmouseover = () => {
-  sec.style.background = '#252525c9';
+  sec.style.background = '#0f0f0fb9';
 }
 
 seventh.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 ////////////
 
 eighth.onmouseover = () => {
-  sec.style.background = '#36668d7e';
+  sec.style.background = '#0a2a44bd';
 }
 
 eighth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 ////////////
@@ -230,15 +238,15 @@ ninth.onmouseover = () => {
 }
 
 ninth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
 
 ///////////
 
 tenth.onmouseover = () => {
-  sec.style.background = '#6d2b627c';
+  sec.style.background = '#42163ba2';
 }
 
 tenth.onmouseleave = () => {
-  sec.style.background = '#666666a1';  
+  sec.style.background = '#1b1b1bb9';  
 }
